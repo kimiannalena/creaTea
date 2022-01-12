@@ -265,6 +265,10 @@
     width: 1920px;
   }
 
+  #welocme-text {
+    margin: 60px 0 0 60px;
+  }
+  
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
@@ -286,17 +290,6 @@
       transform: rotate(-5deg);
     }
 
-    #welocme-text {
-      flex-wrap: wrap;
-    }
-
-    #recent-posts {
-      flex-wrap: wrap;
-    }
-
-    .content {
-      flex-wrap: wrap;
-    }
   }
 
   @media screen and (max-width: 575px) {
@@ -305,15 +298,4 @@
       visibility: hidden;
     }
     
-    #welocme-text {
-      flex-wrap: wrap;
-    }
-
-    #recent-posts {
-      flex-wrap: wrap;
-    }
-
-    .content {
-      flex-wrap: wrap;
-    }
   }
