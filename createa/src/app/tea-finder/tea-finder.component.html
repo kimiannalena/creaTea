@@ -70,36 +70,22 @@
             <div class="card" (click)="showResult(3)">Verdauung anregen</div>
         </div>
         <div *ngSwitchCase="'season'">
-            <div class="card">Frühling</div>
-            <div class="card">Sommer</div>
-            <div class="card">Herbst</div>
-            <div class="card">Winter</div>
+            <div class="card" (click)="showResult(4)">Frühling</div>
+            <div class="card" (click)="showResult(5)">Sommer</div>
+            <div class="card" (click)="showResult(6)">Herbst</div>
+            <div class="card" (click)="showResult(7)">Winter</div>
         </div>
         <div *ngSwitchCase="'energy'">
-            <div class="card">Wachmacher</div>
-            <div class="card">Vor dem Sport</div>
+            <div class="card" (click)="showResult(8)">Wachmacher</div>
+            <div class="card" (click)="showResult(9)">Vor dem Sport</div>
         </div>
         <div *ngSwitchCase="'feelgood'">
-            <div class="card">Abendwonne</div>
-            <div class="card">Work-Life-Balance</div>
-            <div class="card">Filmabend</div>
+            <div class="card" (click)="showResult(10)">Abendwonne</div>
+            <div class="card" (click)="showResult(11)">Work-Life-Balance</div>
+            <div class="card" (click)="showResult(12)">Filmeabend</div>
         </div>
 
     </div>
-
-    <router-outlet></router-outlet>
-
-    <!-- Total -->
-
-
-    <!-- Terminal -->
-    <!-- <div class="card" [ngSwitch]="selection.value">
-  
-        <pre *ngSwitchDefault>ng generate component xyz</pre>
-        <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-        <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-        <pre *ngSwitchCase="'test'">ng test</pre>
-    </div> -->
 
     <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="515.677" viewBox="0 0 2611.084 485.677">
         <title>Clouds Background</title>
