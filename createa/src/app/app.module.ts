@@ -9,13 +9,17 @@ import { environment } from '../environments/environment.prod'
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { InfoComponent } from './info/info.component';
 import { StartComponent } from './start/start.component';
+import { TeaFinderComponent } from './tea-finder/tea-finder.component';
+import { TeaResultComponent } from './tea-result/tea-result.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoComponent,
-    StartComponent
+    StartComponent,
+    TeaFinderComponent,
+    TeaResultComponent
   ],
   imports: [
     BrowserModule,

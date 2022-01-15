@@ -5,11 +5,10 @@
       width="100"
       alt="creaTea Logo"
       src="../assets/createalogo.png"
+      routerLink="/"
     />
     <!-- <span>creaTea</span> -->
-      <div class="spacer">
-        <h2>Wilkommen!</h2>
-      </div>
+        <div class="spacer"></div>
       <!-- Links -->
         <a id="instagram-link" class="circle-link" title="Animations" href="https://www.instagram.com/createa_official/" target="_blank" rel="noopener">
           <svg class="instagram-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#606c38" width="21.762" height="23.447"
@@ -42,77 +41,39 @@
   
   <div class="content" role="main" style="display: flex; flex-direction: row;justify-content: space-between; align-items: flex-start;">
   
-    <!-- Highlight Card -->
-    <!-- <div class="card highlight-card card-small">
-  
-      <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
-        <title>Rocket Ship</title>
-        <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
-          <circle id="Ellipse_8" data-name="Ellipse 8" cx="50.839" cy="50.839" r="50.839" transform="translate(141 696)" fill="#dd0031"/>
-          <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
-            <path id="Path_33" data-name="Path 33" d="M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z" transform="translate(0.371 3.363)" fill="#fff"/>
-            <path id="Path_34" data-name="Path 34" d="M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z" transform="translate(0 0.005)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
-  
-      <span>{{ title }} app is running!</span>
-  
-      <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
-        <title>Rocket Ship Smoke</title>
-        <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
-      </svg>
-  
-    </div> -->
-  
-    <!-- Next Steps -->
-    <!-- <h2>Next Steps</h2>
-    <p>What do you want to do next with your app?</p>
-  
-    <input type="hidden" #selection>
-  
-    <div class="card-container">
-      <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>New Component</span>
-      </button>
-  
-      <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Angular Material</span>
-      </button>
-  
-      <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Add PWA Support</span>
-      </button>
-  
-      <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Add Dependency</span>
-      </button>
-  
-      <button class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Run and Watch Tests</span>
-      </button>
-  
-      <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-        <span>Build for Production</span>
-      </button>
-    </div> -->
-  
-    <!-- Terminal -->
-    <!-- <div class="terminal" [ngSwitch]="selection.value">
-  
-        <pre *ngSwitchDefault>ng generate component xyz</pre>
-        <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-        <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-        <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-        <pre *ngSwitchCase="'test'">ng test</pre>
-        <pre *ngSwitchCase="'build'">ng build</pre>
-    </div> -->
+    
+
+    <!-- Welcome Text -->
+    <div id="welcome-text" style="display: flex; flex-direction: column; align-items: flex-start; font-size: large; font-weight: lighter;">
+      <h1 style="color: #BB6B25;">Wilkommen</h1>
+      <p style="color: #344620;">CreaTea ist ein fiktives Unternehmen, für welches im Rahmen eines Moduls an der
+          Technischen Hochschule Mittelhessen eine Strategie erstellt wird. Im Studiengang 
+          Social Media Systems entwickeln sechs junge Studentinnen diese aktuell und setzen
+          sie auf den verlinkten Social-Media-Plattformen um.
+      </p>
+      <div>
+        <div class="oval-link" routerLink="/teefinder">Tee Beratung</div>
+        <!-- <svg style="align-self: center;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.084" height="120.677" viewBox="0 0 1280.000000 1106.000000" preserveAspectRatio="xMidYMid meet">
+                  <g transform="translate(0.000000,1106.000000) scale(0.100000,-0.100000)" fill="#606c38" stroke="none">
+                  <path d="M5570 8954 c-830 -28 -1333 -62 -1835 -124 -1020 -128 -1693 -353
+                    -1874 -627 -30 -45 -31 -50 -31 -157 0 -166 32 -560 66 -826 187 -1453 650
+                    -2683 1331 -3529 183 -228 397 -445 600 -609 l82 -67 -1700 -3 -1699 -2 3
+                    -113 c5 -134 33 -230 104 -348 48 -81 140 -191 212 -255 24 -21 62 -65 84 -99
+                    96 -142 327 -340 552 -474 696 -414 1779 -712 3175 -871 1047 -120 2473 -120
+                    3520 0 1396 159 2479 457 3175 871 225 134 456 332 552 474 22 34 60 78 84 99
+                    72 64 164 174 212 255 71 118 99 214 104 349 l3 112 -1735 0 -1736 0 78 62
+                    c453 365 893 928 1179 1510 28 56 43 77 54 73 8 -2 67 -11 130 -19 348 -45
+                    673 -23 928 63 367 123 596 365 688 728 75 297 44 782 -67 1049 -98 234 -280
+                    393 -523 454 -97 24 -327 43 -418 35 l-68 -7 5 28 c39 229 85 699 99 1034 6
+                    127 -6 162 -86 246 -229 242 -867 443 -1778 558 -430 55 -822 86 -1465 117
+                    -204 10 -1790 20 -2005 13z m5412 -2539 c168 -16 282 -114 332 -285 25 -85 38
+                    -290 25 -384 -37 -274 -227 -449 -574 -531 -142 -33 -425 -63 -425 -45 0 5 24
+                    76 54 157 110 304 241 763 296 1035 l11 57 77 3 c79 4 105 3 204 -7z"/>
+                  </g>
+          </svg> -->
+      </div>
+      
+    </div>
 
     <!-- Recent Posts -->
     <div id="recent-posts" style="display: flex; flex-direction: row;justify-content: space-between;">
@@ -123,33 +84,6 @@
             <iframe width="250" height="500" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D114710214416276%26id%3D108622931691671&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
         
-    </div>
-
-    <!-- Welcome Text -->
-    <div id="welcome-text" style="display: flex; flex-direction: column; align-items: center; font-size: large; font-weight: lighter; margin: 60px 0 0 60px;">
-        <p style="color: 344620;">CreaTea ist ein fiktives Unternehmen, für welches im Rahmen eines Moduls an der
-            Technischen Hochschule Mittelhessen eine Strategie erstellt wird. Im Studiengang 
-            Social Media Systems entwickeln sechs junge Studentinnen diese aktuell und setzen
-            sie auf den verlinkten Social-Media-Plattformen um.
-        </p>
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.084" height="170.677" viewBox="0 0 1280.000000 1106.000000" preserveAspectRatio="xMidYMid meet">
-            <g transform="translate(0.000000,1106.000000) scale(0.100000,-0.100000)" fill="#606c38" stroke="none">
-            <path d="M5570 8954 c-830 -28 -1333 -62 -1835 -124 -1020 -128 -1693 -353
-              -1874 -627 -30 -45 -31 -50 -31 -157 0 -166 32 -560 66 -826 187 -1453 650
-              -2683 1331 -3529 183 -228 397 -445 600 -609 l82 -67 -1700 -3 -1699 -2 3
-              -113 c5 -134 33 -230 104 -348 48 -81 140 -191 212 -255 24 -21 62 -65 84 -99
-              96 -142 327 -340 552 -474 696 -414 1779 -712 3175 -871 1047 -120 2473 -120
-              3520 0 1396 159 2479 457 3175 871 225 134 456 332 552 474 22 34 60 78 84 99
-              72 64 164 174 212 255 71 118 99 214 104 349 l3 112 -1735 0 -1736 0 78 62
-              c453 365 893 928 1179 1510 28 56 43 77 54 73 8 -2 67 -11 130 -19 348 -45
-              673 -23 928 63 367 123 596 365 688 728 75 297 44 782 -67 1049 -98 234 -280
-              393 -523 454 -97 24 -327 43 -418 35 l-68 -7 5 28 c39 229 85 699 99 1034 6
-              127 -6 162 -86 246 -229 242 -867 443 -1778 558 -430 55 -822 86 -1465 117
-              -204 10 -1790 20 -2005 13z m5412 -2539 c168 -16 282 -114 332 -285 25 -85 38
-              -290 25 -384 -37 -274 -227 -449 -574 -531 -142 -33 -425 -63 -425 -45 0 5 24
-              76 54 157 110 304 241 763 296 1035 l11 57 77 3 c79 4 105 3 204 -7z"/>
-            </g>
-          </svg>
     </div>
   
   
@@ -164,4 +98,4 @@
   <!-- Footer -->
   <footer style="margin: 0 0 0 45%">
     <a routerLink="/info">Impressum & Datenschutz</a>
-</footer>
+  </footer> 
