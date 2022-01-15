@@ -29,7 +29,14 @@
 <div class="content" role="main" style="display: flex; flex-direction: column;justify-content: flex-start; align-items: center; min-height: 70vh;">
 
 
-    <h2>{{ id }}</h2>
+    <h2 style="margin: 0 0 40px 0;">{{ tea?.title }}</h2>
+
+    <div class="card">{{ tea?.baseTea }}</div>
+    <div class="ingredients">
+        <div class="ingredient-card" *ngFor="let ingredient of tea?.ingredients">{{ ingredient }}</div>
+    </div>
+    <p class="description">{{ tea?.description }}</p>
+
 
     <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="515.677" viewBox="0 0 2611.084 485.677">
         <title>Clouds Background</title>

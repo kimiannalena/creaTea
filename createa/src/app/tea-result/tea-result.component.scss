@@ -1,0 +1,38 @@
+@import url(../start/start.component.scss);
+
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+.card {
+    height: 20px;
+    color: white;
+    border: 1px solid #c1c7af;
+    background-color: #606c38be;
+}
+
+
+.ingredient-card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 25px;
+    width: auto;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+
+.description {
+    justify-self: flex-start;
+}
